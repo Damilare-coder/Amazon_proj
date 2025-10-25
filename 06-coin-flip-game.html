@@ -6,34 +6,42 @@
     <title>Rock Paper Scissors</title>
 </head>
 
-
-
 <body>
     <p>
-        Rock Paper Scissors
+        Coin Flip Game
     </p>
 
-    
-    
-    <script>
+    <button onclick="
+        const num= Math.random();
 
-        //Steps
-        //1. When we click a button
-        //a. Computer selects a random move
-        //b. compares the moves to get result
-        //c. display the result in a popup
+        console.log(num);
+        
 
-        /*
-            Shortcuts for if statements
-            1. Ternary operator ?:
-            2. Guard operator &&
-            3. Default operator ||
-        */
-    
+        let result = num < 0.5 ? 'Heads' : 'Tails';
+        console.log(result);
+        
+        const guess= 'Heads';
+        console.log(guess);
         
 
 
-    </script>
+        // if ( guess == result ){
+        //     console.log('You win!')
+        // }else{
+        //     console.log('You lose!')
+        // }
+
+        result === guess ? console.log('You win!') : console.log('You lose!');
+        
+
+        
+        
+    
+    "> Toss
+
+    </button>
+    
+
 </body>
 
 
