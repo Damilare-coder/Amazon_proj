@@ -13,30 +13,27 @@
 
     <button onclick="
         const num= Math.random();
-
-        console.log(num);
+        // console.log(num);
         
 
         let result = num < 0.5 ? 'Heads' : 'Tails';
         console.log(result);
         
-        const guess= 'Heads';
-        console.log(guess);
+        const rand_guess = Math.random();
+        // console.log(rand_guess);
         
-
-
+        let player_toss = rand_guess < 0.5 ? 'Heads' : 'Tails';
+        console.log(player_toss);
+                
         // if ( guess == result ){
         //     console.log('You win!')
         // }else{
         //     console.log('You lose!')
         // }
 
-        result === guess ? console.log('You win!') : console.log('You lose!');
+        result === player_toss ? console.log('You win!') : console.log('You lose!');
         
 
-        
-        
-    
     "> Toss
 
     </button>
